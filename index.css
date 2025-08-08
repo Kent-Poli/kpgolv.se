@@ -144,3 +144,29 @@ footer {
     align-items: center;
   }
 }
+/* Se till att sidan fyller hela höjden på skärmen */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox layout för att trycka ner footern */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wrapper växer för att ta all plats utom footern */
+.wrapper {
+  flex: 1;
+}
+
+/* Footer alltid längst ner och högre höjd */
+footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem; /* Höjden ökas här */
+  margin-top: auto;
+}
