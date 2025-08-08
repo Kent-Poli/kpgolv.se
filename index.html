@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kp Golv & Ytskikt</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>Hej</h1>
+    <header>
+      <div class="logo">Kp Golv & Ytskikt</div>
+      <nav>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul id="nav-links">
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Tjänster</a></li>
+          <li><a href="#">Om oss</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Experter på golv och ytskikt</h1>
+      <p>
+        Vi levererar högkvalitativa ytskiktslösningar – med noggrannhet och
+        passion.
+      </p>
+      <a href="#kontakt" class="cta">Kontakta oss</a>
+    </section>
+
+    <section class="tjanster">
+      <h2>Våra tjänster</h2>
+      <div class="service-boxes">
+        <div class="service">
+          <h3>Golvavjämning</h3>
+          <p>
+            Perfekta underlag för alla typer av golv – snabbt och noggrant
+            utfört.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Måleri</h3>
+          <p>Inomhus och utomhusmålning med öga för detaljer och kvalitet.</p>
+        </div>
+        <div class="service">
+          <h3>Kakel & Klinker</h3>
+          <p>Professionell plattsättning i badrum, kök och andra utrymmen.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Kp Golv & Ytskikt | Västerås | 073-822 40 40</p>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
